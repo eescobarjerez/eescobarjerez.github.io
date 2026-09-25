@@ -35,8 +35,7 @@
     body{margin:0;color:var(--ink);background:radial-gradient(circle at 85% 8%,rgba(55,132,207,.15),transparent 25rem),var(--paper);font:17px/1.72 "DM Sans",sans-serif}
     a{color:var(--accent);text-underline-offset:4px}a:hover{color:var(--warm)}
     .container{width:min(calc(100% - 40px),var(--content));margin:auto}
-    .site-nav{display:flex;align-items:center;justify-content:space-between;min-height:80px;border-bottom:1px solid rgba(24,35,31,.12)}
-    .wordmark{color:var(--ink);font-weight:700;letter-spacing:-.03em;text-decoration:none}
+    .site-nav{display:flex;align-items:center;justify-content:flex-end;min-height:80px;border-bottom:1px solid rgba(24,35,31,.12)}
     .nav-links{display:flex;gap:28px}.nav-links a{color:var(--muted);font-size:15px;font-weight:600;text-decoration:none}
     .hero{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:clamp(48px,8vw,100px);min-height:620px;padding:72px 0 86px}
     .eyebrow,.section-label{margin:0 0 18px;color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
@@ -46,9 +45,9 @@
     .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
     .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:1px solid var(--ink);border-radius:999px;color:var(--ink);font-size:15px;font-weight:700;text-decoration:none;transition:.2s}
     .button:hover{transform:translateY(-2px);color:var(--ink)}.button.primary{border-color:var(--accent);color:#fff;background:var(--accent)}.button.primary:hover{background:#0d477f;color:#fff}
-    .portrait-wrap{position:relative;width:min(100%,340px);aspect-ratio:1;margin-left:auto;padding:10px;border:1px solid #b8cae0;border-radius:50%;background:rgba(255,255,255,.68);box-shadow:0 24px 60px rgba(29,70,118,.14)}
-    .portrait-wrap:before{content:"";position:absolute;z-index:-1;inset:24px -18px -18px 24px;border-radius:50%;background:#d9e8f6}
-    .portrait{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 28%;filter:saturate(.88) contrast(1.02)}
+    .portrait-wrap{width:min(78vw,280px);aspect-ratio:1;margin-left:auto;padding:6px;border:2px solid #8eb3d8;border-radius:50%;background:#fff;box-shadow:0 18px 45px rgba(29,70,118,.13);overflow:hidden}
+    .portrait-wrap:before{content:none}
+    .portrait{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 34%;filter:saturate(.92) contrast(1.01)}
     main{border-top:1px solid var(--line)}
     .section{display:grid;grid-template-columns:260px 1fr;gap:clamp(40px,8vw,110px);padding:92px 0;border-bottom:1px solid var(--line)}
     .section-label{margin:0;color:var(--warm)}.section h2{margin:8px 0 0;font-size:clamp(36px,4vw,52px);line-height:1.05;letter-spacing:-.035em}
@@ -61,7 +60,7 @@
     .publication-title{display:block;color:var(--ink);font:600 23px/1.3 "Newsreader",serif}a.publication-title{text-decoration-thickness:1px}
     .publication-meta{display:block;margin-top:8px;color:var(--muted);font-size:14px;line-height:1.55}.subheading{margin:58px 0 20px;font-size:30px}
     footer{padding:34px 0 50px}.footer-inner{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:14px}
-    @media(max-width:800px){.nav-links a:not(:last-child){display:none}.hero{grid-template-columns:1fr;min-height:auto;padding-top:54px}.portrait-wrap{width:min(78%,330px);margin:10px auto 0}.section{grid-template-columns:1fr;gap:34px;padding:68px 0}.interests{grid-template-columns:1fr}.interest{min-height:auto}}
+    @media(max-width:800px){.nav-links a:not(:last-child){display:none}.hero{grid-template-columns:1fr;min-height:auto;padding-top:54px}.portrait-wrap{width:min(72%,260px);margin:10px auto 0}.section{grid-template-columns:1fr;gap:34px;padding:68px 0}.interests{grid-template-columns:1fr}.interest{min-height:auto}}
     @media(max-width:480px){body{font-size:16px}.container{width:min(calc(100% - 28px),var(--content))}.site-nav{min-height:68px}h1{font-size:49px}.hero{gap:46px;padding:48px 0 70px}.actions{display:grid}.button{width:100%}.publication{padding:21px}.footer-inner{flex-direction:column}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>
@@ -69,7 +68,6 @@
 <body>
   <header class="container">
     <nav class="site-nav" aria-label="Main navigation">
-      <a class="wordmark" href="#top">Eddie Escobar Jerez</a>
       <div class="nav-links"><a href="#about">About</a><a href="#research">Research</a><a href="mailto:eescobarjerez@gmail.com">Contact</a></div>
     </nav>
     <div class="hero" id="top">
@@ -120,6 +118,6 @@
       </div>
     </section>
   </main>
-  <footer><div class="container footer-inner"><span>© 2026 Eddie Escobar Jerez</span></div></footer>
+  <footer><div class="container footer-inner"><span>© 2026</span></div></footer>
 </body>
 </html>
