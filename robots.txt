@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eescobarjerez.github.io/sitemap.xml
