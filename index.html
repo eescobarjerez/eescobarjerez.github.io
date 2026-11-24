@@ -10,6 +10,14 @@
   <meta property="og:description" content="MACRM student at the University of Chicago studying education, social policy, and human capital development.">
   <meta property="og:url" content="https://eescobarjerez.github.io/">
   <meta property="og:image" content="https://eescobarjerez.github.io/foto_eddie.jpg">
+  <meta property="og:image:alt" content="Portrait of Eddie Escobar Jerez">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Eddie Escobar Jerez | Research &amp; Public Policy">
+  <meta name="twitter:description" content="MACRM student at the University of Chicago studying education, social policy, and human capital development.">
+  <meta name="twitter:image" content="https://eescobarjerez.github.io/foto_eddie.jpg">
+  <meta name="theme-color" content="#165da8">
+  <link rel="canonical" href="https://eescobarjerez.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23165da8'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' text-anchor='middle' fill='white'%3EEE%3C/text%3E%3C/svg%3E">
   <title>Eddie Escobar Jerez | Research &amp; Public Policy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +29,12 @@
       "name": "Eddie Escobar Jerez",
       "url": "https://eescobarjerez.github.io/",
       "image": "https://eescobarjerez.github.io/foto_eddie.jpg",
+      "email": "mailto:eescobarjerez@gmail.com",
       "jobTitle": "Graduate Student",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Pontificia Universidad Católica de Chile"
+      },
       "affiliation": {
         "@type": "CollegeOrUniversity",
         "name": "University of Chicago Harris School of Public Policy"
@@ -34,13 +47,16 @@
     *{box-sizing:border-box}html{scroll-behavior:smooth}
     body{margin:0;color:var(--ink);background:radial-gradient(circle at 85% 8%,rgba(55,132,207,.15),transparent 25rem),var(--paper);font:17px/1.72 "DM Sans",sans-serif}
     a{color:var(--accent);text-underline-offset:4px}a:hover{color:var(--warm)}
+    a:focus-visible,.button:focus-visible{outline:3px solid var(--warm);outline-offset:3px;border-radius:4px}
+    .skip-link{position:absolute;left:-9999px;top:8px;z-index:10;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;font-weight:700;text-decoration:none}
+    .skip-link:focus{left:8px;color:#fff}
     .container{width:min(calc(100% - 40px),var(--content));margin:auto}
-    .site-nav{display:flex;align-items:center;justify-content:flex-end;min-height:80px;border-bottom:1px solid rgba(24,35,31,.12)}
+    .site-nav{display:flex;align-items:center;justify-content:flex-end;min-height:80px;border-bottom:1px solid var(--line)}
     .nav-links{display:flex;gap:28px}.nav-links a{color:var(--muted);font-size:15px;font-weight:600;text-decoration:none}
     .hero{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:clamp(48px,8vw,100px);min-height:620px;padding:72px 0 86px}
     .eyebrow,.section-label{margin:0 0 18px;color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
     h1,h2,h3{font-family:"Newsreader",serif}
-    h1{max-width:none;margin:0;font-size:clamp(46px,4.8vw,64px);font-weight:600;letter-spacing:-.035em;line-height:1;white-space:nowrap}
+    h1{max-width:860px;margin:0;font-size:clamp(48px,6vw,76px);font-weight:600;letter-spacing:-.045em;line-height:1}
     .hero-intro{max-width:660px;margin:28px 0 0;color:var(--muted);font-size:clamp(18px,2vw,22px);line-height:1.55}
     .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
     .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:1px solid var(--ink);border-radius:999px;color:var(--ink);font-size:15px;font-weight:700;text-decoration:none;transition:.2s}
@@ -56,16 +72,18 @@
     .interest{min-height:150px;padding:24px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.7);font:24px/1.2 "Newsreader",serif}
     .interest span{display:block;margin-bottom:24px;color:var(--warm);font:600 13px "DM Sans",sans-serif}
     .publication-list{display:grid;gap:18px;margin:0;padding:0;list-style:none}
-    .publication{padding:25px 28px;border:1px solid var(--line);border-radius:12px;background:var(--surface);transition:.2s}.publication:hover{transform:translateY(-2px);border-color:#9ca9a2}
+    .publication{padding:25px 28px;border:1px solid var(--line);border-radius:12px;background:var(--surface);transition:.2s}.publication:hover{transform:translateY(-2px);border-color:#8eb3d8}
     .publication-title{display:block;color:var(--ink);font:600 23px/1.3 "Newsreader",serif}a.publication-title{text-decoration-thickness:1px}
     .publication-meta{display:block;margin-top:8px;color:var(--muted);font-size:14px;line-height:1.55}.subheading{margin:58px 0 20px;font-size:30px}
+    .subheading:first-child{margin-top:0}
     footer{padding:34px 0 50px}.footer-inner{display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:14px}
-    @media(max-width:800px){.nav-links a:not(:last-child){display:none}.hero{grid-template-columns:1fr;min-height:auto;padding-top:54px}.portrait-wrap{width:min(72%,260px);margin:10px auto 0}.section{grid-template-columns:1fr;gap:34px;padding:68px 0}.interests{grid-template-columns:1fr}.interest{min-height:auto}h1{white-space:normal}}
+    @media(max-width:800px){.nav-links a:not(:last-child){display:none}.hero{grid-template-columns:1fr;min-height:auto;padding-top:54px}.portrait-wrap{width:min(72%,260px);margin:10px auto 0}.section{grid-template-columns:1fr;gap:34px;padding:68px 0}.interests{grid-template-columns:1fr}.interest{min-height:auto}}
     @media(max-width:480px){body{font-size:16px}.container{width:min(calc(100% - 28px),var(--content))}.site-nav{min-height:68px}h1{font-size:44px}.hero{gap:46px;padding:48px 0 70px}.actions{display:grid}.button{width:100%}.publication{padding:21px}.footer-inner{flex-direction:column}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#about">Skip to content</a>
   <header class="container">
     <nav class="site-nav" aria-label="Main navigation">
       <div class="nav-links"><a href="#about">About</a><a href="#research">Research</a><a href="mailto:eescobarjerez@gmail.com">Contact</a></div>
@@ -77,21 +95,19 @@
         <p class="hero-intro">MACRM student using data and causal evidence to study education, social policy, and human capital development.</p>
         <div class="actions">
           <a class="button primary" href="https://drive.google.com/file/d/1NgEjuUOYD6tTuU_iW_WYMtljQt7MlB4s/preview" target="_blank" rel="noopener noreferrer">View CV ↗</a>
-          <a class="button" href="mailto:eescobarjerez@gmail.com">Get in touch</a>
+          <a class="button" id="contact-btn" href="mailto:eescobarjerez@gmail.com" data-email="eescobarjerez@gmail.com">Get in touch</a>
         </div>
       </div>
-      <div class="portrait-wrap"><img class="portrait" src="foto_eddie.jpg" alt="Portrait of Eddie Escobar Jerez"></div>
+      <div class="portrait-wrap"><img class="portrait" src="foto_eddie.jpg" alt="Portrait of Eddie Escobar Jerez" width="280" height="280" fetchpriority="high" decoding="async"></div>
     </div>
   </header>
   <main>
     <section class="section container" id="about">
       <div><p class="section-label">Profile</p><h2>About me</h2></div>
       <div class="section-body">
-        <p>I am currently a student in the <a href="https://harris.uchicago.edu/academics/degrees/ma-public-policy-certificate-research-methods-macrm">Master of Arts in Public Policy with Certificate in Research Methods (MACRM)</a> at the University of Chicago Harris School of Public Policy. I am interested in using data and causal evidence to expand educational opportunities and improve the design of social policies.</p>
-        <p>Before joining Harris, I led a research team as a Research and Project Coordinator at Pontificia Universidad Católica de Chile and Universidad de Chile. Our work included an experimental impact evaluation on rent subsidy utilization and public officials’ performance under the direction of Professors <a href="https://sites.google.com/site/pablocelhay/">Pablo Celhay</a> and <a href="https://www.javieraselman.com/">Javiera Selman</a>, funded by Chile’s Budget Office (DIPRES).</p>
-        <p>I have also collaborated with Professor <a href="https://gobierno.uc.cl/profesores/susana-claro/">Susana Claro</a> on research about teachers’ growth mindset, educational monitoring during the COVID-19 pandemic, and more inclusive reporting of national learning outcomes.</p>
-        <p>Previously, I worked with <a href="https://www.christopher-neilson.com/index.html">Christopher Neilson</a> and <a href="https://sites.google.com/view/franciscoagallego">Francisco Gallego</a> at J-PAL LAC and later at ConsiliumBots on large-scale education projects in Chile and Colombia, including <a href="https://www.consiliumbots.com/esp/proyectos/decidiendo-para-un-futuro-mejor">Decidiendo un Futuro Mejor</a> and a nationwide randomized evaluation of <a href="https://www.christopher-neilson.com/work/Application-Mistakes.html">smart matching platforms</a>.</p>
-        <p>I hold a Master’s Degree in Public Policy (2020–2021) and a B.S. in Civil Engineering of Industry (2014–2019), both from Pontificia Universidad Católica de Chile.</p>
+        <p>I am a student in the <a href="https://harris.uchicago.edu/academics/degrees/ma-public-policy-certificate-research-methods-macrm">Master of Arts in Public Policy with Certificate in Research Methods (MACRM)</a> at the University of Chicago Harris School of Public Policy. I use data and causal evidence to expand educational opportunities and improve the design of social policies.</p>
+        <p>Before Harris, I coordinated a large-scale randomized evaluation of rent subsidy take-up with Chile’s Ministry of Finance (DIPRES) and Ministry of Housing, with <a href="https://sites.google.com/site/pablocelhay/">Pablo Celhay</a> and <a href="https://www.javieraselman.com/">Javiera Selman</a>. Previously, at J-PAL LAC and ConsiliumBots with <a href="https://www.christopher-neilson.com/index.html">Christopher Neilson</a> and <a href="https://sites.google.com/view/franciscoagallego">Francisco Gallego</a>, I directed the scale-up of <a href="https://www.consiliumbots.com/esp/proyectos/decidiendo-para-un-futuro-mejor">Deciding for a Better Future</a>, which reached over 120,000 students in Chile and Colombia, and a nationwide randomized evaluation of <a href="https://www.christopher-neilson.com/work/Application-Mistakes.html">smart matching platforms</a>. I have also worked with <a href="https://gobierno.uc.cl/profesores/susana-claro/">Susana Claro</a> on teachers’ growth mindset and school attendance during COVID-19.</p>
+        <p>I hold a Master’s in Public Policy and a B.S. in Civil Engineering of Industry, both from Pontificia Universidad Católica de Chile.</p>
       </div>
     </section>
     <section class="section container">
@@ -101,23 +117,48 @@
         <div class="interests"><div class="interest"><span>01</span>Education policy</div><div class="interest"><span>02</span>Social programs</div><div class="interest"><span>03</span>Human capital development</div></div>
       </div>
     </section>
+    <section class="section container" id="awards">
+      <div><p class="section-label">Recognition</p><h2>Awards</h2></div>
+      <div class="section-body">
+        <ul class="publication-list">
+          <li class="publication"><span class="publication-title">Young Leaders Award</span><span class="publication-meta">Granted by <em>Revista Sábado</em> and Universidad Adolfo Ibáñez · 2021</span></li>
+        </ul>
+      </div>
+    </section>
     <section class="section container" id="research">
       <div><p class="section-label">Selected work</p><h2>Research &amp; publications</h2></div>
       <div class="section-body">
         <ul class="publication-list">
-          <li class="publication"><span class="publication-title">Teachers’ Growth Mindset in Latin America and Its Impact on Student Learning</span><span class="publication-meta">Claro, S., Cruz, G., Paredes, V., &amp; <strong>Escobar, E.</strong> · Working Paper, LLECE · 2025</span></li>
+          <li class="publication"><span class="publication-title">Teachers’ Growth Mindset in Latin America and Its Impact on the Classroom and Student Learning</span><span class="publication-meta">Claro, S., <strong>Escobar, E.</strong>, Cruz, G., Paredes, V., &amp; Cabezas, V. · Working Paper, LLECE · 2025</span></li>
           <li class="publication"><a class="publication-title" href="https://drive.google.com/file/d/1c8n5iOdcJjIQYlww-GMHJxUkO9TnbA_v/view?usp=sharing" target="_blank" rel="noopener noreferrer">Educational Perceptions and Expectations: Evidence from Urban Students in Peru ↗</a><span class="publication-meta">Gallego, F., Molina, O., Neilson, C., &amp; <strong>Escobar, E.</strong> · Working Paper · 2025</span></li>
-          <li class="publication"><span class="publication-title">National Monitoring Survey during the Pandemic</span><span class="publication-meta">Llorente, C., Rivera, M., Canales, A., Claro, S., Meneses, F., Undurraga, E., Valenzuela, J., &amp; <strong>Escobar, E.</strong> · Evidences 60 · 2024</span></li>
-          <li class="publication"><a class="publication-title" href="https://politicaspublicas.uc.cl/publicacion/simce-con-los-que-faltan-propuesta-de-reporte-de-puntajes-simce-que-incluya-a-la-poblacion-sin-informacion/" target="_blank" rel="noopener noreferrer">Simce with Those Who Are Missing ↗</a><span class="publication-meta">Claro, S., Ramírez, F., Domínguez, P., &amp; <strong>Escobar, E.</strong> · Public Policy Agenda Topics, 19(178) · 2024</span></li>
+          <li class="publication"><span class="publication-title">Evidences 60: National Monitoring Survey during the Pandemic: Perceptions of Parents/Guardians of School Establishments</span><span class="publication-meta">Llorente, C., Rivera, M., Canales, A., Claro, S., <strong>Escobar, E.</strong>, Meneses, F., Undurraga, E., &amp; Valenzuela, J. P. · 2024</span></li>
+          <li class="publication"><a class="publication-title" href="https://politicaspublicas.uc.cl/publicacion/simce-con-los-que-faltan-propuesta-de-reporte-de-puntajes-simce-que-incluya-a-la-poblacion-sin-informacion/" target="_blank" rel="noopener noreferrer">Simce with Those Who Are Missing: Proposal for a Simce Score Report That Includes the Population Without Information ↗</a><span class="publication-meta">Claro, S., Ramírez, F., <strong>Escobar, E.</strong>, &amp; Rodríguez, P. · Public Policy Agenda Topics, 19(178), UC Center for Public Policies · 2024</span></li>
         </ul>
         <h3 class="subheading">Book chapters</h3>
         <ul class="publication-list">
-          <li class="publication"><span class="publication-title">University Education Financing: Time to Rethink II</span><span class="publication-meta">Massanés, L., Petric, V., &amp; <strong>Escobar, E.</strong> · In <em>Ideas in Education IV</em> · 2024</span></li>
-          <li class="publication"><span class="publication-title">University Education Financing: Time to Rethink</span><span class="publication-meta">Massanés, L., Valdés, R., &amp; <strong>Escobar, E.</strong> · In <em>Ideas in Education II</em> · 2021</span></li>
+          <li class="publication"><span class="publication-title">University Education Financing: Time to Rethink II</span><span class="publication-meta"><strong>Escobar, E.</strong>, Massanés, L., &amp; Petric, V. · In I. Sánchez (Ed.), <em>Ideas in Education IV</em> · 2024</span></li>
+          <li class="publication"><span class="publication-title">University Education Financing: Time to Rethink</span><span class="publication-meta"><strong>Escobar, E.</strong>, Massanés, L., &amp; Valdés, R. · In I. Sánchez (Ed.), <em>Ideas in Education II</em> · 2021</span></li>
         </ul>
       </div>
     </section>
   </main>
-  <footer><div class="container footer-inner"><span>© 2026</span></div></footer>
+  <footer><div class="container footer-inner"><span>© 2026 Eddie Escobar Jerez</span></div></footer>
+  <script>
+    (function () {
+      var btn = document.getElementById('contact-btn');
+      if (!btn) return;
+      var label = btn.textContent;
+      btn.addEventListener('click', function () {
+        var email = btn.getAttribute('data-email');
+        // Copy the address so the button works even without a mail app configured.
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(function () {
+            btn.textContent = 'Email copied ✓';
+            setTimeout(function () { btn.textContent = label; }, 2500);
+          }).catch(function () {});
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
